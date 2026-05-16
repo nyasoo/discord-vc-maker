@@ -92,7 +92,7 @@ async def end(interaction: discord.Interaction):
     )
 
 @bot.tree.command(name="invite",description="指定した人をVCに招待")
-async def invite(interaction: discord.Interaction, user:mention):
+async def invite(interaction: discord.Interaction, user:discord.mention):
 
     # 自分のVC取得
     channel = private_rooms.get(
